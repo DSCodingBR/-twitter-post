@@ -3,18 +3,18 @@ const cabecalho = document.querySelector('header');
 
 
 
-const textarea = document.querySelector('textarea');
-const tweetar = document.querySelector('button');
-const feed = document.querySelector(".conteudoPrincipal__listaTweets")
+const post_textarea = document.querySelector('textarea');
+const post_tweetar = document.querySelector('button');
+const post_feed = document.querySelector(".conteudoPrincipal__listaTweets")
 
-function pegarTweet(event) {
-    event.preventDefault();
+function pegarTweet(ev) {
+    ev.preventDefault();
 
-    const tweetTextarea = textarea.value;
+    const tweetTextarea = post_textarea.value;
     criarTweet(tweetTextarea)
 }
 
-tweetar.addEventListener('click', pegarTweet);
+post_tweetar.addEventListener('click', pegarTweet);
 
 
 
@@ -68,8 +68,8 @@ function listarTemplateTweet(tweet){
     li.appendChild(img)
     li.appendChild(div)
     
-    feed.appendChild(li)
-    textarea.value = ""
+    post_feed.appendChild(li)
+    post_textarea.value = ""
 }   
 
 
