@@ -70,6 +70,8 @@ function listarTemplateTweet(tweet){
     
     post_feed.appendChild(li)
     post_textarea.value = ""
+
+    
 }   
 
 

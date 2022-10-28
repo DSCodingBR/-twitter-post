@@ -125,3 +125,9 @@ body{
     margin-top: 15px;
     color: #333333;
 }
+
+.post__footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
